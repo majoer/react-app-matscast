@@ -16,11 +16,14 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.3",
+    "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
@@ -28,8 +31,10 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "matscast": "git+https://github.com/majoer/matscast.git",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "scss-library-media-commons": "git+https://github.com/majoer/scss-library-media-commons.git",
     "serve": "^10.0.0"
   }
 }
