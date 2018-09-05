@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -50,5 +51,10 @@ module.exports = {
     fs: 'empty',
     net: 'empty',
     tls: 'empty'
+  },
+  resolve: {
+    alias: {
+      environment: path.join(__dirname, `src/environment/environment.prod.js`)
+    }
   }
 };

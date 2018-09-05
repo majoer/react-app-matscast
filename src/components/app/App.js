@@ -1,6 +1,7 @@
 import './App.scss';
 import React, { Component } from "react";
 import Matscast from 'matscast';
+import { environment } from 'environment';
 
 class App extends Component {
 
@@ -19,9 +20,8 @@ class App extends Component {
   }
 
   registerVideoWebSocket() {
-    debugger;
     this.setState({
-      matscast: new Matscast(new WebSocket('ws:localhost:4200'))
+      matscast: new Matscast(new WebSocket(environment.URL_WS_API_MATSCAST))
     });
   }
 
