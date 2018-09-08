@@ -53,7 +53,7 @@ module.exports = {
   plugins: [htmlPlugin],
   devtool: 'source-map',
   devServer: {
-    port: 3000,
+    port: 3100,
     historyApiFallback: true
   },
   node: {
